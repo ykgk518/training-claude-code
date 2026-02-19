@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブロック崩し</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    h1 {
+      margin-bottom: 16px;
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #e94560;
+    }
+    #gameCanvas {
+      border: 2px solid #e94560;
+      border-radius: 4px;
+      display: block;
+    }
+    #info {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>ブロック崩し</h1>
+  <canvas id="gameCanvas" width="480" height="360"></canvas>
+  <p id="info">← → キーまたはマウスでパドルを動かす</p>
+  <script src="main.js"></script>
+</body>
+</html>
